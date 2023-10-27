@@ -26,6 +26,8 @@
         
         <meta name="robots" content="noindex nofollow">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="index.css">
+        
         <style>
             /*Testing out certain styles!*/
             /*
@@ -41,143 +43,150 @@
         </style>
     </head>
     <body>
-        <header>
-            <div id="introduction">
-                <h1>Dominic Orlando</h1>
-                <picture title="Dominic Orlando">
-                    <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                    <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250">
-                </picture>
-            </div>
-            <div id="navigation">
-                <details open>
-                    <summary>Channels</summary>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html"># Biography</a></li>
-                            <li><a href="#classes"># Classes</a></li>
-                            <li><a href="projects.html"># Projects</a></li>
-                            <li><a href="experiments.html"># Experiments</a></li>
-                            <li><a href="https://www.linkedin.com/in/dominic-orlando-/"># Linkedin</a></li>
-                            <li><a href="/assests/Resume.pdf"># Resume</a></li>
-                            <li><a href="https://github.com/dom500d"># Github</a></li>
-                        </ul>
-                    </nav>
-                </details>
-            </div>
-        </header>
-        <main>
-            <section id="bio-section" aria-labelledby="biography">
-                <!-- Using an article below looks like i can't use the h2 to label the section. This is why I decided to use a div here.
-                I could use a section but I feel like again I then can't use the heading to label the over-arching section here. -->
-                <div id="bio-section-header">
-                    <h2 id="biography"> # Biography</h2>
-                    <div id="search-container">
-                        <form>
-                            <label for="search-bar">Search the Site!</label>
-                            <input type="text" id="search-bar">
-                            <input type="submit" value="Search!">
-                        </form>
+        <div id="left-side">
+            <header>
+                <div id="introduction">
+                    <h1>Dominic Orlando</h1>
+                    <picture title="Dominic Orlando">
+                        <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
+                        <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250">
+                    </picture>
+                </div>
+                <div id="navigation">
+                    <details open>
+                        <summary>Channels</summary>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html"># Biography</a></li>
+                                <li><a href="#classes"># Classes</a></li>
+                                <li><a href="projects.html"># Projects</a></li>
+                                <li><a href="experiments.html"># Experiments</a></li>
+                                <li><a href="https://www.linkedin.com/in/dominic-orlando-/"># Linkedin</a></li>
+                                <li><a href="/assests/Resume.pdf"># Resume</a></li>
+                                <li><a href="https://github.com/dom500d"># Github</a></li>
+                            </ul>
+                        </nav>
+                    </details>
+                </div>
+            </header>
+            <footer>
+                <p id="copyright">&copy; <a href="mailto:dorlando@ucsd.edu">Dominic Orlando</a></p>
+            </footer>
+        </div>
+        <div id="right-side">
+            <main>
+                <section id="bio-section" aria-labelledby="biography">
+                    <!-- Using an article below looks like i can't use the h2 to label the section. This is why I decided to use a div here.
+                    I could use a section but I feel like again I then can't use the heading to label the over-arching section here. -->
+                    <div id="bio-section-header">
+                        <h2 id="biography"> # Biography</h2>
+                        <div id="search-container">
+                            <form>
+                                <label for="search-bar">Search the Site!</label>
+                                <input type="text" id="search-bar">
+                                <input type="submit" value="Search!">
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div id="bio-section-info">
-                    <p>Hi there, I'm <strong>Dominic Orlando</strong>, a 4th year <b>Electrical Engineering </b>student at <i>UC San Diego</i>.
-                        My specialization is in Machine Learning and Controls, and I have been admitted to the EE Master's program here at UCSD
-                        in the Machine Learning and Data Science research concentration.
-                    </p>
-                    <table id="classes">
-                        <caption>
-                            Education Information
-                        </caption>
-                        <colgroup>
-                            <col span="1" class="left-side">
-                            <col span="1" class="right-side">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th colspan="2">Courses Taken</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ECE 148: Autonomous Vehicles</td>
-                                <td>ECE 176: Deep Learning & Applications</td>
-                            </tr>
-                            <tr>
-                                <td>ECE 140A/B: Product Engineering</td>
-                                <td>ECE 174: Linear and Nonlinear Optimization</td>
-                            </tr>
-                            <tr>
-                                <td>ECE 175A: M.L. and Pattern Recognition</td>
-                                <td>ECE 171A: Linear Control Theory</td>
-                            </tr>
-                            <tr>
-                                <td>ECE 101: Linear Systems</td>
-                                <td>ECE 109: Engineering Probability & Stats</td>
-                            </tr>
-                            <tr>
-                                <td>ECE 101: Linear Systems</td>
-                                <td>ECE 109: Engineering Probability & Stats</td>
-                            </tr>
-                            <tr>
-                                <td>ECE 101: Linear Systems</td>
-                                <td>ECE 109: Engineering Probability & Stats</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <aside>
-                        <h3>Besides from Classes: </h3>
-                        <ol>
-                            <li>President of the UCSD Cycling team</li>
-                            <li>Former Road Captain of the UCSD Cycling team</li>
-                            <li>Internship experience (check resume)!</li>
-                        </ol>
-                    </aside>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p id="copyright">&copy; <a href="mailto:dorlando@ucsd.edu">Dominic Orlando</a></p>
-            <section id="contact-me" aria-labelledby="contact-header">
-                <h2 id="contact-header">Please Contact Me with any Opportunities!</h2>
-                <fieldset>
-                    <legend>Send Message to Dominic Orlando</legend>
-                    <form action="index.html" method="get">
-                        <label for="contact-form-name">Name: </label>
-                        <input id="contact-form-name" name="name" type="text" required>
-                        <label for="contact-form-email">Email: </label>
-                        <input id="contact-form-email" name="email" type="text" required>
-                        <label for="contact-form-message">Message: </label>
-                        <textarea id="contact-form-message" name="message"> </textarea>
-                        <label for="method-select">How would you like me to get back to you?</label>
-                        <select id="method-select" name="method">
-                            <optgroup label="Real">
-                                <option>Email</option>
-                                <option>Telephone</option>
-                                <option>In-Person</option>
-                            </optgroup>
-                            <optgroup label="Fake">
-                                <option>Smoke Signal</option>
-                                <option>Telegraph</option>
-                            </optgroup>
-                        </select>
-                        <label for="tip">Would you like to tip me?</label>
-                        <input type="range" list="ticks" min="0" max="5" id="tip" name="tip">
-                         <!-- How do I get the labels to show? -->
-                        <datalist id="ticks">
-                            <option value="0" label="0"></option>
-                            <option value="1" label="1"></option>
-                            <option value="2" label="2"></option>
-                            <option value="3" label="3"></option>
-                            <option value="4" label="4"></option>
-                            <option value="5" label="5"></option>
-                        </datalist>
-                        <br>
-                        <br>
-                        <button type="submit">Submit</button>
-                    </form>
-                </fieldset>
-            </section>      
-        </footer>
+                    <div id="bio-section-info">
+                        <p>Hi there, I'm <strong>Dominic Orlando</strong>, a 4th year <b>Electrical Engineering </b>student at <i>UC San Diego</i>.
+                            My specialization is in Machine Learning and Controls, and I have been admitted to the EE Master's program here at UCSD
+                            in the Machine Learning and Data Science research concentration.
+                        </p>
+                        <table id="classes">
+                            <caption>
+                                Education Information
+                            </caption>
+                            <colgroup>
+                                <col span="1" class="left-side">
+                                <col span="1" class="right-side">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Courses Taken</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ECE 148: Autonomous Vehicles</td>
+                                    <td>ECE 176: Deep Learning & Applications</td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 140A/B: Product Engineering</td>
+                                    <td>ECE 174: Linear and Nonlinear Optimization</td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 175A: M.L. and Pattern Recognition</td>
+                                    <td>ECE 171A: Linear Control Theory</td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 101: Linear Systems</td>
+                                    <td>ECE 109: Engineering Probability & Stats</td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 101: Linear Systems</td>
+                                    <td>ECE 109: Engineering Probability & Stats</td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 101: Linear Systems</td>
+                                    <td>ECE 109: Engineering Probability & Stats</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <aside>
+                            <h3>Besides from Classes: </h3>
+                            <ol>
+                                <li>President of the UCSD Cycling team</li>
+                                <li>Former Road Captain of the UCSD Cycling team</li>
+                                <li>Internship experience (check resume)!</li>
+                            </ol>
+                        </aside>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                
+                <section id="contact-me" aria-labelledby="contact-header">
+                    <h2 id="contact-header">Please Contact Me with any Opportunities!</h2>
+                    <fieldset>
+                        <legend>Send Message to Dominic Orlando</legend>
+                        <form action="index.html" method="get">
+                            <label for="contact-form-name">Name: </label>
+                            <input id="contact-form-name" name="name" type="text" required>
+                            <label for="contact-form-email">Email: </label>
+                            <input id="contact-form-email" name="email" type="text" required>
+                            <label for="contact-form-message">Message: </label>
+                            <textarea id="contact-form-message" name="message"> </textarea>
+                            <label for="method-select">How would you like me to get back to you?</label>
+                            <select id="method-select" name="method">
+                                <optgroup label="Real">
+                                    <option>Email</option>
+                                    <option>Telephone</option>
+                                    <option>In-Person</option>
+                                </optgroup>
+                                <optgroup label="Fake">
+                                    <option>Smoke Signal</option>
+                                    <option>Telegraph</option>
+                                </optgroup>
+                            </select>
+                            <label for="tip">Would you like to tip me?</label>
+                            <input type="range" list="ticks" min="0" max="5" id="tip" name="tip">
+                            <!-- How do I get the labels to show? -->
+                            <datalist id="ticks">
+                                <option value="0" label="0"></option>
+                                <option value="1" label="1"></option>
+                                <option value="2" label="2"></option>
+                                <option value="3" label="3"></option>
+                                <option value="4" label="4"></option>
+                                <option value="5" label="5"></option>
+                            </datalist>
+                            <br>
+                            <br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </fieldset>
+                </section>      
+            </footer>
+        </div>
     </body>
 </html>

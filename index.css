@@ -1,0 +1,26 @@
+:root {
+    --left-color: purple;
+    --right-color: rgb(243, 148, 243);
+    --text-color: azure;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+#left-side {
+    width: 22vw;
+    height: 100vh;
+    background-color: var(--left-color, blue);
+}   
+
+#right-side {
+    flex: 1;
+    background-color: var(--right-color);
+}
+
