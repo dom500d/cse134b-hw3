@@ -4,6 +4,10 @@
     --text-color: azure;
 }
 
+a {
+    color: var(--text-color, azure);
+}
+
 body {
     display: flex;
     margin: 0;
@@ -15,12 +19,17 @@ body {
 
 #left-side {
     width: 22vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     height: 100vh;
     background-color: var(--left-color, blue);
 }   
 
 #right-side {
     flex: 1;
+    padding-left: 2vw;
+    padding-right: 2vw;
     background-color: var(--right-color);
 }
+
 
