@@ -27,9 +27,47 @@ body {
 
 #right-side {
     flex: 1;
-    padding-left: 2vw;
-    padding-right: 2vw;
     background-color: var(--right-color);
 }
 
+#biography {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
 
+#bio-picture {
+    width: 20vw;
+    height: auto;
+}
+
+.message {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgb(201, 82, 141);
+}
+
+.message-pic {
+    width: 5vw;
+    height: auto;
+}
+
+footer {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.message-content {
+    margin-left: 1vw;
+}
+
+table{
+    border-collapse:collapse;
+    border:1px solid #000000;
+    }
+    
+    table td{
+    border:1px solid #000000;
+    }
