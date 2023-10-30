@@ -40,6 +40,12 @@
             }
           
         </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                let id = document.getElementById("message-wrapper");
+                id.scrollTop = id.scrollHeight;
+            });
+        </script>
     </head>
     <body>
         <div id="left-side">

@@ -13,6 +13,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    height: 100vh;
     flex-direction: row;
     flex-wrap: wrap;
     color: var(--text-color);
@@ -41,7 +42,8 @@ ul {
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* This broke the scrollability of the container for some reason. Interesting 
+    justify-content: flex-end; */
     overflow-y: scroll;
 }
 
@@ -87,10 +89,10 @@ ul {
     height: auto;
 }
 
-footer {
+/* footer {
     margin-left: 2vw;
     margin-right: 2vw;
-}
+} */
 
 .message-content {
     margin-left: 1vw;
