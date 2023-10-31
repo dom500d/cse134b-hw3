@@ -121,15 +121,49 @@ caption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: antiquewhite;
+    background-color: rgb(123, 102, 73);
 }
 
 #contact-me {
     margin-left: 2vw;
     margin-right: 3vw;
 }
+
 form h2 {
     padding: 0;
     margin: 0;
 
 }
+
+form {
+    padding: 1vw;
+}
+
+#contact-form-name {
+    width: 40%;
+}
+
+#contact-form-email {
+    width: 40%;
+}
+label {
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+#contact-form-name-label {
+    margin-right: 1vw;
+    
+}
+
+#contact-form-message {
+    width: 100%;
+}
+
+#form-name-email {
+    width: 100%;
+}
+
+#form-message {
+    flex: 1;
+}
+
