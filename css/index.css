@@ -1,9 +1,4 @@
-:root {
-    --left-color: purple;
-    --right-color: rgb(243, 148, 243);
-    --text-color: azure;
-    --nav-font-size: 1.5rem;
-}
+@import url(vars.css);
 
 a {
     color: var(--text-color, azure);
@@ -13,6 +8,10 @@ main {
     height: 83%;
 }
 
+hr {
+    border: 1px grey solid;
+    margin-bottom: 1vh;
+}
 body {
     display: flex;
     margin: 0;
