@@ -171,48 +171,18 @@
                     </article>
                 </section>
             </main>
-            <footer>
-                <section id="contact-me" aria-labelledby="contact-header">
-                    <h2 id="contact-header">Please Contact Me with any Opportunities!</h2>
-                    <fieldset>
-                        <legend>Send Message to Dominic Orlando</legend>
-                        <form action="index.html" method="get">
-                            <label for="contact-form-name">Name: </label>
-                            <input id="contact-form-name" name="name" type="text" required>
-                            <label for="contact-form-email">Email: </label>
-                            <input id="contact-form-email" name="email" type="text" required>
-                            <label for="contact-form-message">Message: </label>
-                            <textarea id="contact-form-message" name="message"> </textarea>
-                            <label for="method-select">How would you like me to get back to you?</label>
-                            <select id="method-select" name="method">
-                                <optgroup label="Real">
-                                    <option>Email</option>
-                                    <option>Telephone</option>
-                                    <option>In-Person</option>
-                                </optgroup>
-                                <optgroup label="Fake">
-                                    <option>Smoke Signal</option>
-                                    <option>Telegraph</option>
-                                </optgroup>
-                            </select>
-                            <label for="tip">Would you like to tip me?</label>
-                            <input type="range" list="ticks" min="0" max="5" id="tip" name="tip">
-                            <!-- How do I get the labels to show? -->
-                            <datalist id="ticks">
-                                <option value="0" label="0"></option>
-                                <option value="1" label="1"></option>
-                                <option value="2" label="2"></option>
-                                <option value="3" label="3"></option>
-                                <option value="4" label="4"></option>
-                                <option value="5" label="5"></option>
-                            </datalist>
-                            <br>
-                            <br>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </fieldset>
-                </section>      
-            </footer>
+            <section id="contact-me" aria-labelledby="contact-header">
+                <form action="index.html" method="get" id="contact-form">
+                    <h2 id="contact-header">Message Dominic Orlando</h2>
+                    <label for="contact-form-name">Name: </label>
+                    <input id="contact-form-name" name="name" type="text" required>
+                    <label for="contact-form-email">Email: </label>
+                    <input id="contact-form-email" name="email" type="text" required>
+                    <label for="contact-form-message">Message: </label>
+                    <textarea id="contact-form-message" name="message"> </textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>      
         </div>
     </body>
 </html>

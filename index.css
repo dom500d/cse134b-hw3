@@ -9,6 +9,10 @@ a {
     color: var(--text-color, azure);
 }
 
+main {
+    height: 85%;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -35,7 +39,7 @@ ul {
 }
 
 #navigation {
-    height: 45vh;
+    height: 40vh;
 }
 
 #message-wrapper {
@@ -45,8 +49,8 @@ ul {
     /* This broke the scrollability of the container for some reason. Interesting 
     justify-content: flex-end; */
     overflow-y: scroll;
+    /* scrollbar-width: 1vw; */
 }
-
 
 #left-side {
     width: 22vw;
@@ -58,6 +62,7 @@ ul {
 
 #right-side {
     flex: 1;
+    height: 100vh;
     background-color: var(--right-color);
 }
 
@@ -67,7 +72,7 @@ ul {
 }
 
 #bio-section {
-    height: 70vh;
+    height: 100%;
 }
 
 #bio-picture {
@@ -76,8 +81,7 @@ ul {
 }
 
 .message {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     display: flex;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -111,4 +115,21 @@ table td {
 
 caption {
     margin-bottom: 0.5vh;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+
+#contact-me {
+    margin-left: 2vw;
+    margin-right: 3vw;
+}
+form h2 {
+    padding: 0;
+    margin: 0;
+
 }
