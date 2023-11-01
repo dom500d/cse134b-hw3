@@ -3,5 +3,8 @@
     --right-color: rgb(224, 224, 224);
     --text-color: azure;
     --nav-font-size: 1.5rem;
-    --page-header: rgb(1, 1, 1); 
+    --page-header: rgb(1, 1, 1);
+    --contact-color: rgb(168, 14, 161); 
+    --message-color: rgb(148, 147, 147);
+    --underline-color: rgb(206, 206, 206);
 }
