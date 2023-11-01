@@ -4,6 +4,11 @@ a {
     color: var(--text-color, azure);
 }
 
+time {
+    padding-left: 0.5rem;
+    font-weight: 100;
+}
+
 iframe {
     border: none;
     width: 60vw;
@@ -77,6 +82,8 @@ table {
 }
     
 table td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border:1px solid #000000;
 }
 
@@ -195,8 +202,6 @@ form {
     
 }
 
-
-
 #contact-form-name {
     width: 27vw;
 }
@@ -227,3 +232,13 @@ form {
     height: 80vh;
 }
 
+#hackathon-picture {
+    width: 70%;
+    height: auto;
+}
+
+.bio-classes-link-p {
+    display: inline;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
