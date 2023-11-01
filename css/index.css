@@ -82,8 +82,7 @@ table {
 }
     
 table td {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     border:1px solid #000000;
 }
 
@@ -154,20 +153,21 @@ form {
 }
 
 .message {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     
     margin-left: 2vw;
     margin-right: 2vw;
     background-color: var(--message-color);
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .message-pic {
+    margin-top: 0.25rem;
     width: 5vw;
     height: auto;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .message-sender {
@@ -192,7 +192,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--left-color);
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 #contact-me {
