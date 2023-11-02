@@ -322,4 +322,8 @@ form {
     #contact-me {
         height: 12vh;
     }
+
+    .message:last-child {
+        margin-bottom: 3rem;
+    }
 }
