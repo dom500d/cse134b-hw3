@@ -409,4 +409,8 @@ main section details {
     #contact-form-email-label {
         margin-left: 0;
     }
+
+    body {
+        height: 90vh;
+    }
 }
