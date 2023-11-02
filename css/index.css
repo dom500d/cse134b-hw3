@@ -5,6 +5,11 @@ time {
     font-weight: 100;
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     width: 20vw;
     font-size: 1.5rem;
@@ -12,8 +17,12 @@ h1 {
 
 iframe {
     border: none;
-    width: 60vw;
+    width: calc(100% - 2rem);
     height: 60vh;
+}
+
+video {
+    width: calc(100% - 2rem);
 }
 
 li {
@@ -273,11 +282,17 @@ form {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.project-picture {
+    width: calc(100% - 2rem);
+}
+
 @media screen and (max-width: 970px) {
     h1 {
         font-size: 1.25rem;
     }
 }
+
 @media screen and (max-width: 810px){
     #left-side {
         display: none;
@@ -285,6 +300,11 @@ form {
     
     #contact-me {
         width: calc(100% - 2rem);
+    }
+
+    iframe {
+        width: 100%;
+    
     }
 
 }

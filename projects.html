@@ -103,7 +103,7 @@
                                         allowfullscreen>
                                     </iframe>
                                     <figure>
-                                        <img src="assests/aegis-hardware.png" width="300">
+                                        <img src="assests/aegis-hardware.png" width="300" class="project-picture">
                                         <figcaption>Hardware Setup for Aegis</figcaption>
                                     </figure>
                                 </article>
@@ -165,14 +165,14 @@
                                 <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 23:34:15">11:34pm</time></p>
                                 <article class="message-content" aria-labelledby="prosthetech">
                                     <h3 class="project-heading" id="prosthetech">ProstheTech (HARD Hack)</h3>
-                                    <a href="https://github.com/ymorsi7/ProstheTech">
+                                    <a href="https://github.com/ymorsi7/ProstheTech" target="_blank">
                                         <picture>
                                             <source srcset="assests/hard-hack-edited.webp 300w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                                            <img 
+                                            <img    
                                                 src="assests/hard-hack-edited.jpg" 
                                                 alt="Dominic Orlando with his team after being overall runnerup at HARD Hack 2023, a UCSD student run Hackathon." 
                                                 width="250"
-                                                id="hackathon-picture">
+                                                class="project-picture">
                                         </picture>
                                     </a>
                                 </article>
@@ -185,8 +185,8 @@
                             </picture>
                             <div class="message-content-holder">
                                 <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 23:45:06">11:45pm</time></p>
-                                <article class="message-content" aria-labelledby="prosthetech">
-                                    <h3 class="project-heading" id="prosthetech">Portfolio Website</h3>
+                                <article class="message-content" aria-labelledby="website-project">
+                                    <h3 class="project-heading" id="website-project">Portfolio Website</h3>
                                     <iframe
                                         src="https://dorlando.tech"
                                         title="Dominic Orlando's Portfolio Website at dorlando.tech"
@@ -202,10 +202,14 @@
                         <form action="index.html" method="get" id="contact-form">
                             <!-- <h2 id="contact-header">Message Dominic Orlando</h2> -->
                             <div id="form-name-email">
-                                <label id="contact-form-name-label" for="contact-form-name">Name: </label>
-                                <input id="contact-form-name" name="name" type="text" required>
-                                <label id="contact-form-email-label" for="contact-form-email">Email: </label>
-                                <input id="contact-form-email" name="email" type="text" required>
+                                <div class="form-name-email-wrapper">
+                                    <label id="contact-form-name-label" for="contact-form-name">Name: </label>
+                                    <input id="contact-form-name" name="name" type="text" required>
+                                </div>
+                                <div class="form-name-email-wrapper">
+                                    <label id="contact-form-email-label" for="contact-form-email">Email: </label>
+                                    <input id="contact-form-email" name="email" type="text" required>
+                                </div>
                             </div>
                             <div id="form-message">
                                 <label for="contact-form-message">Message: </label>
@@ -213,7 +217,7 @@
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
-                    </section>      
+                    </section> 
                 </section>
             </main>
             
