@@ -6,6 +6,7 @@ time {
 }
 
 h1 {
+    width: 20vw;
     font-size: 1.5rem;
 }
 
@@ -80,6 +81,7 @@ nav {
 
 ul {
     margin: 0;
+    padding-left: 23px;
 }
 
 table {
@@ -131,13 +133,16 @@ form {
 }
 
 #left-side {
-    width: 22vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    width: 24vw;
     height: 100vh;
     background-color: var(--left-color, blue);
     color: var(--left-text-color);
 }   
+
+#left-side > * {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
 
 #right-side {
     flex: 1;
@@ -148,8 +153,8 @@ form {
 
 #page-header {
     color: var(--page-header, rgb(1, 1, 1));
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #bio-section {
@@ -174,7 +179,7 @@ form {
 
 .message-pic {
     margin-top: 0.25rem;
-    width: 5vw;
+    width: 5rem;
     height: auto;
     border-radius: var(--border-radius);
 }
@@ -187,7 +192,7 @@ form {
 }
 
 .message-content-holder {
-    width: 90%;
+    width: calc(100% - 5rem);
 }
 
 .message-content {
@@ -198,8 +203,8 @@ form {
 
 #contact-form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: var(--left-color);
     border-radius: var(--border-radius);
 }
@@ -210,14 +215,18 @@ form {
     margin-right: 1rem;
     color: var(--left-text-color);
     bottom: 1rem;
+    width: 73vw;
+
 }
 
 #contact-form-name {
-    width: 27vw;
+    flex: 1;
+    min-width: 1rem;
 }
 
 #contact-form-email {
     flex: 1;
+    min-width: 1rem;
 }
 
 #contact-form-message {
@@ -251,4 +260,19 @@ form {
     display: inline;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+@media screen and (max-width: 970px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 810px){
+    #left-side {
+        display: none;
+    }
+    
+    #contact-me {
+        width: calc(100% - 2rem);
+    }
+
 }
