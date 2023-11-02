@@ -410,3 +410,9 @@ main section details {
         margin-left: 0;
     }
 }
+
+@media screen and (max-height: 800px) {
+    #message-wrapper {
+        height: 70vh;
+    }
+}
