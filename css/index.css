@@ -5,6 +5,10 @@ time {
     font-weight: 100;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 iframe {
     border: none;
     width: 60vw;
@@ -21,6 +25,15 @@ a {
     color: inherit;
 }
  
+footer p {
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+}
+
 a::after {
     content: '';
     position: absolute;
@@ -100,6 +113,7 @@ form {
 
 #navigation {
     height: 40vh;
+    font-size: 1.25rem;
 }
 
 #message-wrapper {
