@@ -88,126 +88,138 @@
                 <p id="copyright">&copy; <a href="mailto:dorlando@ucsd.edu">Dominic Orlando</a></p>
             </footer>
         </div>
-        <div id="right-side">
-            <main>
-                <section id="bio-section" aria-labelledby="page-header">
-                    <!-- Using an article below looks like i can't use the h2 to label the section. This is why I decided to use a div here.
-                    I could use a section but I feel like again I then can't use the heading to label the over-arching section here. -->
-                    <h2 id="page-header"> # Experiments </h2>
-                    <hr>
-                    <article id="message-wrapper">
-                        <div class="message">
-                            <picture title="Dominic Orlando">
-                                <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                                <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
-                            </picture>
-                            <div class="message-content-holder">
-                                <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 21:55:07">9:55pm</time></p>
-                                <article aria-labelledby="gaming" class="message-content">
-                                    <h3 id="gaming">Katarina Gaming</h3>
-                                    <video controls src="assests/13-13_NA1-4714193734_01.webm" width="700">
-                                        Dominic playing Katarina in League of Legends
-                                    </video>
-                                </article>
+        <main id="right-side">
+            <section id="bio-section" aria-labelledby="page-header">
+                <!-- Using an article below looks like i can't use the h2 to label the section. This is why I decided to use a div here.
+                I could use a section but I feel like again I then can't use the heading to label the over-arching section here. -->
+                <h2 id="page-header"> # Experiments </h2>
+                <hr>
+                <article id="message-wrapper" aria-labelledby="messages-from-dominic">
+                    <h3 class="visually-hidden" id="messages-from-dominic">Messages from Dominic</h3>
+                    <div class="message">
+                        <picture title="Dominic Orlando">
+                            <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
+                            <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
+                        </picture>
+                        <div class="message-content-holder">
+                            <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 21:55:07">9:55pm</time></p>
+                            <article aria-labelledby="gaming" class="message-content">
+                                <h3 id="gaming">Katarina Gaming</h3>
+                                <video controls src="assests/13-13_NA1-4714193734_01.webm" width="700">
+                                    Dominic playing Katarina in League of Legends
+                                </video>
+                            </article>
+                        </div>
+                    </div>  
+                    <div class="message">
+                        <picture title="Dominic Orlando">
+                            <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
+                            <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
+                        </picture>
+                        <div class="message-content-holder">
+                            <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 22:22:03">10:22pm</time></p>
+                            <article aria-labelledby="sound" class="message-content">
+                                <h3 id="sound">Here's some sound!</h3>
+                                <!-- Maybe have the audio be how to pronounce my name? -->
+                                <audio controls src="assests/mixkit-arcade-retro-game-over-213.wav">
+                                    Video game game over effect.
+                                </audio>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <picture title="Dominic Orlando">
+                            <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
+                            <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
+                        </picture>
+                        <div class="message-content-holder">
+                            <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 10:33:46">10:33pm</time></p>
+                            <article aria-labelledby="math" class="message-content">
+                                <h3 id="math">Here's some <em>math!</em></h3>
+                                <math xmlns='http://www.w3.org/1998/Math/MathML'>
+                                    <mrow>
+                                        <mi>e</mi>
+                                        <mo>=</mo>
+                                        <mi>m</mi>
+                                        <mo>&InvisibleTimes;</mo>
+                                        <msup>
+                                            <mi>c</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </math>
+                                <p>MathML couldn't be used until recently due to Chrome (and Edge probably as well) not supporting it until eariler this year, according to <strong>caniuse.com</strong>. Since these browsers weren't compataible with MathML,
+                                    developers couldn't use it since these two browsers have a considerable amount of market share.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <picture title="Dominic Orlando">
+                            <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
+                            <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
+                        </picture>
+                        <div class="message-content-holder">
+                            <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 22:55:23">10:55pm</time></p>
+                            <article aria-labelledby="random" class="message-content">
+                                <h3 id="random">Random</h3>
+                                <pre>Hello  there     I    like style</pre>
+                                <p>I can't wait until I can use <code>console.log();</code>, when we put JavaScript on our website!</p>
+                                <p>I'm going to <span class="italics">test</span> the use of the <code>&lt;svg&gt;</code> tag! 
+                                    <svg
+                                    viewbox="0 0 500 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    stroke="red"
+                                    fill="grey">
+                                        <circle cx = "50" cy="50" r="10"></circle>
+                                    </svg>
+                                </p>
+                                <h3>I don't know how to use a Canvas tag</h3>
+                                <canvas>
+                                    This is a canvas displaying a black square.
+                                </canvas>
+                                <p>
+                                    I have deteremined, through extensive eperiemntation, that the maximum recursion depth of an 
+                                    iframe is 4.
+                                </p>
+                            </article>
+                        </div>
+                    </div>        
+                </article>
+                <section id="contact-me" aria-labelledby="contact-header">
+                    <form action="index.html" method="get" id="contact-form">
+                        <h3 id="contact-header">Message Dominic Orlando</h3>
+                        <div id="form-name-email">
+                            <div class="form-name-email-wrapper">
+                                <label id="contact-form-name-label" for="contact-form-name">Name: </label>
+                                <input id="contact-form-name" name="name" type="text" required>
                             </div>
-                        </div>  
-                        <div class="message">
-                            <picture title="Dominic Orlando">
-                                <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                                <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
-                            </picture>
-                            <div class="message-content-holder">
-                                <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 22:22:03">10:22pm</time></p>
-                                <article aria-labelledby="sound" class="message-content">
-                                    <h3 id="sound">Here's some sound!</h3>
-                                    <!-- Maybe have the audio be how to pronounce my name? -->
-                                    <audio controls src="assests/mixkit-arcade-retro-game-over-213.wav">
-                                        Video game game over effect.
-                                    </audio>
-                                </article>
+                            <div class="form-name-email-wrapper">
+                                <label id="contact-form-email-label" for="contact-form-email">Email: </label>
+                                <input id="contact-form-email" name="email" type="text" required>
                             </div>
                         </div>
-                        <div class="message">
-                            <picture title="Dominic Orlando">
-                                <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                                <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
-                            </picture>
-                            <div class="message-content-holder">
-                                <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 10:33:46">10:33pm</time></p>
-                                <article aria-labelledby="math" class="message-content">
-                                    <h3 id="math">Here's some <em>math!</em></h3>
-                                    <math xmlns='http://www.w3.org/1998/Math/MathML'>
-                                        <mrow>
-                                            <mi>e</mi>
-                                            <mo>=</mo>
-                                            <mi>m</mi>
-                                            <mo>&InvisibleTimes;</mo>
-                                            <msup>
-                                                <mi>c</mi>
-                                                <mn>2</mn>
-                                            </msup>
-                                        </mrow>
-                                    </math>
-                                    <p>MathML couldn't be used until recently due to Chrome (and Edge probably as well) not supporting it until eariler this year, according to <strong>caniuse.com</strong>. Since these browsers weren't compataible with MathML,
-                                        developers couldn't use it since these two browsers have a considerable amount of market share.
-                                    </p>
-                                </article>
-                            </div>
+                        <div id="form-message">
+                            <label for="contact-form-message">Message: </label>
+                            <input id="contact-form-message" name="message" type="text"></input>
+                            <button type="submit">Submit</button>
                         </div>
-                        <div class="message">
-                            <picture title="Dominic Orlando">
-                                <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
-                                <img alt="Picture of Dominic Orlando" src="assests/IMG_3740_cropped.jpg" height="250" class="message-pic">
-                            </picture>
-                            <div class="message-content-holder">
-                                <p class="message-sender">Dominic Orlando <time datetime="2023-10-31 22:55:23">10:55pm</time></p>
-                                <article aria-labelledby="random" class="message-content">
-                                    <h3 id="random">Random</h3>
-                                    <pre>Hello  there     I    like style</pre>
-                                    <p>I can't wait until I can use <code>console.log();</code>, when we put JavaScript on our website!</p>
-                                    <p>I'm going to <span class="italics">test</span> the use of the <code>&lt;svg&gt;</code> tag! 
-                                        <svg
-                                        viewbox="0 0 500 100"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        stroke="red"
-                                        fill="grey">
-                                            <circle cx = "50" cy="50" r="10"></circle>
-                                        </svg>
-                                    </p>
-                                    <h3>I don't know how to use a Canvas tag</h3>
-                                    <canvas>
-                                        This is a canvas displaying a black square.
-                                    </canvas>
-                                    <p>
-                                        I have deteremined, through extensive eperiemntation, that the maximum recursion depth of an 
-                                        iframe is 4.
-                                    </p>
-                                </article>
-                            </div>
-                        </div>        
-                    </article>
-                    <section id="contact-me" aria-labelledby="contact-header">
-                        <form action="index.html" method="get" id="contact-form">
-                            <!-- <h2 id="contact-header">Message Dominic Orlando</h2> -->
-                            <div id="form-name-email">
-                                <div class="form-name-email-wrapper">
-                                    <label id="contact-form-name-label" for="contact-form-name">Name: </label>
-                                    <input id="contact-form-name" name="name" type="text" required>
-                                </div>
-                                <div class="form-name-email-wrapper">
-                                    <label id="contact-form-email-label" for="contact-form-email">Email: </label>
-                                    <input id="contact-form-email" name="email" type="text" required>
-                                </div>
-                            </div>
-                            <div id="form-message">
-                                <label for="contact-form-message">Message: </label>
-                                <input id="contact-form-message" name="message" type="text"></input>
-                                <button type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </section>   
-                </section>
-            </main>
-        </div>
+                    </form>
+                </section>   
+            </section>
+        </main>
+        <template>
+            <div class="message">
+                <picture>
+                    <source>
+                    <img>
+                </picture>
+                <div class="message-content-holder">
+                    <p class="message-sender"><time datetime="2023-10-31 21:34:03"></time></p>
+                    <p class="message-content">
+                    </p>
+                </div>
+            </div>
+        </template>
     </body>
 </html>

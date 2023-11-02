@@ -128,7 +128,7 @@ form {
 }
 
 #message-wrapper {
-    height: 82vh;
+    height: 77vh;
     display: flex;
     flex-direction: column;
     /* This broke the scrollability of the container for some reason. Interesting 
@@ -236,8 +236,12 @@ form {
 #contact-form-email {
     flex: 1;
     min-width: 1rem;
+
 }
 
+#contact-form-email-label {
+    margin-left: 1rem;
+}
 #contact-form-message {
     flex: 1;
 }
@@ -286,6 +290,23 @@ form {
 .project-picture {
     width: calc(100% - 2rem);
 }
+
+.visually-hidden {
+    display: none;
+}
+
+h3 {
+    margin: 0;
+    margin-left: 0.25rem;
+    padding: 0;
+    margin-bottom: 0.25rem;
+}
+
+label {
+    margin: 0;
+    margin-right: 1rem;
+}
+
 
 @media screen and (max-width: 970px) {
     h1 {

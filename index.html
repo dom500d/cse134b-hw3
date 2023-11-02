@@ -17,7 +17,8 @@
                      style-src 'self' 'unsafe-inline'; 
                      font-src http:;
                      script-src 'self' 'unsafe-inline';">
-
+        
+        <script src="js/message-add.js"></script>
         <!-- Facebook SEO Meta Tags Sample -->
         <meta property="og:url" content="index.html">
         <meta property="og:type" content="article">
@@ -84,7 +85,8 @@
                 I could use a section but I feel like again I then can't use the heading to label the over-arching section here. -->
                 <h2 id="page-header"> # Biography</h2>
                 <hr>
-                <article id="message-wrapper">
+                <article id="message-wrapper" aria-labelledby="messages-from-dominic">
+                    <h3 class="visually-hidden" id="messages-from-dominic">Messages from Dominic</h3>
                     <div class="message">
                         <picture title="Dominic Orlando">
                             <source srcset="assests/IMG_3740_cropped.webp 250w" type="image/webp" sizes="(max-width: 600px) 200px, 300px">
@@ -227,12 +229,11 @@
                                 will be in Machine Learning and Data Science.
                             </p>
                         </div>
-                    </div> 
-                            
+                    </div>  
                 </article>
                 <section id="contact-me" aria-labelledby="contact-header">
                     <form action="index.html" method="get" id="contact-form">
-                        <!-- <h2 id="contact-header">Message Dominic Orlando</h2> -->
+                        <h3 id="contact-header">Message Dominic Orlando</h3>
                         <div id="form-name-email">
                             <div class="form-name-email-wrapper">
                                 <label id="contact-form-name-label" for="contact-form-name">Name: </label>
@@ -245,12 +246,25 @@
                         </div>
                         <div id="form-message">
                             <label for="contact-form-message">Message: </label>
-                            <input id="contact-form-message" name="message" type="text"></input>
-                            <button type="submit">Submit</button>
+                            <input id="contact-form-message" name="message" type="text">
+                            <button type="submit" id="submit">Submit</button>
                         </div>
                     </form>
                 </section> 
             </section>
         </main>
+        <template>
+            <div class="message">
+                <picture>
+                    <source>
+                    <img>
+                </picture>
+                <div class="message-content-holder">
+                    <p class="message-sender"><time datetime="2023-10-31 21:34:03"></time></p>
+                    <p class="message-content">
+                    </p>
+                </div>
+            </div>
+        </template>
     </body>
 </html>
