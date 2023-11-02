@@ -76,6 +76,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     color: var(--text-color);
+    overflow-y: hidden;
 }
 
 details {
