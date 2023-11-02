@@ -64,6 +64,7 @@ a:hover::after {
 hr {
     border-style: solid;
     border-color: var(--page-header, gray);
+    border-width: 0.1em;
     margin: 0;
 }
 
@@ -84,6 +85,16 @@ details {
 summary:hover {
     cursor: pointer;
 }
+
+summary {
+    display: block;
+}
+
+details.disabled summary {
+    pointer-events: none;
+    user-select: none;
+}
+
 nav {
     font-size: 1.25rem;
 }
@@ -134,6 +145,8 @@ form {
     /* This broke the scrollability of the container for some reason. Interesting 
     justify-content: flex-end; */
     overflow-y: scroll;
+    position: absolute;
+    top: calc(2vh + 1vh + 0.2em + 3rem);
     /* scrollbar-width: 1vw; */
 }
 
@@ -307,6 +320,18 @@ label {
     margin-right: 1rem;
 }
 
+summary h2 {
+    margin: 0;
+    display: inline;
+}
+
+main section details {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 3rem;
+}
+
+
 
 @media screen and (max-width: 970px) {
     h1 {
@@ -328,6 +353,26 @@ label {
     
     }
 
+    summary {
+        display: list-item;
+    }
+
+    details.disabled summary {
+        pointer-events: all;
+        user-select: all;
+    }
+
+    main section div#nav-holder{
+        position: absolute;
+        width:100vw;
+        height: calc(1vh + 2vh + 2em);
+        z-index: 100;
+    }
+
+    main section div details nav {
+        margin-top: 0.4rem;
+        background-color: var(--right-color);
+    }
 }
 
 @media screen and (max-width: 600px) {
