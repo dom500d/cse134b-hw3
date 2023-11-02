@@ -398,10 +398,14 @@ main section details {
     }
 
     #contact-me {
-        height: 12vh;
+        height: 14vh;
     }
 
     .message:last-child {
         margin-bottom: 3rem;
+    }
+
+    #contact-form-email-label {
+        margin-left: 0;
     }
 }
