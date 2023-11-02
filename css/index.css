@@ -366,12 +366,11 @@ main section details {
         /* position: absolute; */
         width:100vw;
         height: calc(1vh + 2vh + 2em);
-        z-index: 100;
     }
 
     main section div details nav {
         position:absolute;
-        z-index: 100;
+        z-index: 99999;
         margin-top: calc(1vh + 0.1em);
         background-color: var(--nav-background);
         width:100vw;
