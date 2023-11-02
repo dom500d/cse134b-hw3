@@ -399,7 +399,7 @@ main section details {
     }
 
     #contact-me {
-        height: 14vh;
+        height: 16vh;
     }
 
     .message:last-child {
@@ -408,9 +408,5 @@ main section details {
 
     #contact-form-email-label {
         margin-left: 0;
-    }
-
-    body {
-        height: 90vh;
     }
 }
