@@ -1,5 +1,18 @@
 @import url(vars.css);
 
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 time {
     padding-left: 0.5rem;
     font-weight: 100;
@@ -239,7 +252,7 @@ form {
     width: 73vw;
     background-color: var(--left-color);
     border-radius: var(--border-radius);
-
+    height: 12vh;
 }
 
 #contact-form-name {
@@ -333,7 +346,6 @@ main section details {
 }
 
 
-
 @media screen and (max-width: 970px) {
     h1 {
         font-size: 1.25rem;
@@ -372,7 +384,7 @@ main section details {
     main section div details nav {
         position:absolute;
         z-index: 99999;
-        margin-top: calc(1vh + 0.1em);
+        margin-top: 1vh;
         background-color: var(--nav-background);
         width: calc(100vw - 1rem);
     }
@@ -385,6 +397,14 @@ main section details {
 
     main section div details summary {
         margin-left: 1rem;
+    }
+
+    #message-wrapper {
+        height: 78vh;
+    }
+
+    main section div details[open] summary ~ * {
+        animation: sweep 0.5s ease-in-out;
     }
 }
 
