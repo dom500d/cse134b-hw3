@@ -1,5 +1,13 @@
 @import url(vars.css);
 
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 time {
     padding-left: 0.5rem;
     font-weight: 100;
@@ -140,7 +148,7 @@ form {
 }
 
 #message-wrapper {
-    height: 77vh;
+    height: 81vh;
     display: flex;
     flex-direction: column;
     /* This broke the scrollability of the container for some reason. Interesting 
@@ -239,7 +247,7 @@ form {
     width: 73vw;
     background-color: var(--left-color);
     border-radius: var(--border-radius);
-
+    height: 12vh;
 }
 
 #contact-form-name {
