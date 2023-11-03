@@ -140,7 +140,7 @@ form {
 }
 
 #message-wrapper {
-    height: 77vh;
+    height: 78vh;
     display: flex;
     flex-direction: column;
     /* This broke the scrollability of the container for some reason. Interesting 
@@ -374,7 +374,7 @@ main section details {
         z-index: 99999;
         margin-top: calc(1vh + 0.1em);
         background-color: var(--nav-background);
-        width:100vw;
+        width: calc(100vw - 1rem);
     }
 
     main section div details nav {
@@ -411,7 +411,7 @@ main section details {
     }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 600px) {
     #message-wrapper {
         height: 70vh;
     }
