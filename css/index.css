@@ -433,7 +433,12 @@ main section details {
     #contact-form-email-label {
         margin-left: 0;
     }
+    
+    #message-wrapper {
+        height: 70vh;
+    }
 }
+
 
 @media screen and (max-height: 600px) {
     #message-wrapper {
