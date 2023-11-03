@@ -252,7 +252,7 @@ form {
     width: 73vw;
     background-color: var(--left-color);
     border-radius: var(--border-radius);
-    height: 12vh;
+    height: 14vh;
 }
 
 #contact-form-name {
