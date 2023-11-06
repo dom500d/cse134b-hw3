@@ -436,5 +436,7 @@ main section details {
 
     #message-wrapper {
         height: 60vh;
+        overflow-x: hidden;
+        width: 100%;
     }
 }
