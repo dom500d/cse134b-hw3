@@ -144,11 +144,6 @@ label {
 form h2 {
     padding: 0;
     margin: 0;
-
-}
-
-form {
-    padding: 1vw;
 }
 
 #navigation {
@@ -248,6 +243,7 @@ form {
 }
 
 #contact-me {
+    box-sizing: border-box;
     position: absolute;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -256,7 +252,8 @@ form {
     width: 73vw;
     background-color: var(--left-color);
     border-radius: var(--border-radius);
-    height: 10vh;
+    height: 14vh;
+    padding: 1vh 1vw;
 }
 
 #contact-form-name {
@@ -367,7 +364,6 @@ main section details {
 
     iframe {
         width: 100%;
-    
     }
 
     summary {
@@ -423,7 +419,7 @@ main section details {
     }
 
     #contact-me {
-        height: 16vh;
+        height: 18vh;
     }
 
     .message:last-child {
@@ -438,5 +434,9 @@ main section details {
         height: 60vh;
         overflow-x: hidden;
         width: 100%;
+    }
+
+    #form-name-email div:last-child {
+        margin-top: 1vh;
     }
 }
