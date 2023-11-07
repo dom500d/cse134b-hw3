@@ -88,6 +88,7 @@ hr {
 img {
     border-radius: var(--border-radius);
 }
+
 body {
     display: flex;
     margin: 0;
@@ -107,13 +108,14 @@ summary:hover {
     cursor: pointer;
 }
 
-summary {
+/* summary {
     display: block;
-}
+} */
 
 details.disabled summary {
     pointer-events: none;
     user-select: none;
+    display: block;
 }
 
 nav {
@@ -369,13 +371,10 @@ main section details {
         width: 100%;
     }
 
-    summary {
-        display: list-item;
-    }
-
     details.disabled summary {
         pointer-events: all;
         user-select: auto;
+        display: list-item;
     }
 
     main section div#nav-holder{
@@ -391,6 +390,10 @@ main section details {
         width: calc(100vw - 1rem);
         padding-left: 1rem;
     }
+/* 
+    li::marker {
+        content: "*";
+    } */
 
     main section div details summary {
         margin-left: 1rem;
@@ -400,6 +403,10 @@ main section details {
         content: '\2261';
         font-size: 2.5rem;
     }
+
+    /* main section div details summary::marker:hover {
+        box-shadow: 60px -16px teal;
+    } */
 
     main section div details[open] summary ~ * {
         animation: sweep 0.25s ease-in-out;
