@@ -28,7 +28,6 @@ figure {
 }
 
 h1 {
-    width: 20vw;
     font-size: 1.5rem;
 }
 
@@ -149,6 +148,10 @@ label {
 form h2 {
     padding: 0;
     margin: 0;
+}
+
+header section details summary h2 {
+    font-size: 1.5rem;
 }
 
 #navigation {
