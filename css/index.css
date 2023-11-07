@@ -85,6 +85,9 @@ hr {
     margin: 0;
 }
 
+img {
+    border-radius: var(--border-radius);
+}
 body {
     display: flex;
     margin: 0;
@@ -218,19 +221,22 @@ form h2 {
 
 .message-sender {
     display: block;
-    margin-left: 1vw;
+    margin-left: 0.6rem;
     margin-top: 1vh;
     font-weight: bold;
+}
+
+.message-content {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .message-content-holder {
     width: calc(100% - 5rem);
 }
 
-.message-content {
-    margin-left: 1vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+.message-content-holder > * {
+    margin-left: 0.6rem;
 }
 
 #contact-form {
@@ -402,6 +408,10 @@ main section details {
 
     main section div details[open] summary ~ * {
         animation: sweep 0.5s ease-in-out;
+    }
+
+    .message-content-holder > * {
+        margin-left: 1rem;
     }
 }
 
