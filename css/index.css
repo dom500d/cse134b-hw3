@@ -386,15 +386,9 @@ main section details {
 
     main section div details nav {
         position:absolute;
-        z-index: 99999;
-        margin-top: 1vh;
+        z-index: 100;
         background-color: var(--nav-background);
         width: calc(100vw - 1rem);
-    }
-
-    main section div details nav {
-        background-color: var(--nav-background);
-        z-index: 9999;
         padding-left: 1rem;
     }
 
@@ -402,12 +396,13 @@ main section details {
         margin-left: 1rem;
     }
 
-    /* #message-wrapper {
-        height: 78vh;
-    } */
+    main section div details summary::marker {
+        content: '\2261';
+        font-size: 2.5rem;
+    }
 
     main section div details[open] summary ~ * {
-        animation: sweep 0.5s ease-in-out;
+        animation: sweep 0.25s ease-in-out;
     }
 
     .message-content-holder > * {
