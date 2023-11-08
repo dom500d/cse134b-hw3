@@ -302,7 +302,7 @@ header section details summary h2 {
 #contact-form-message {
     min-width: 0.25rem;
 }
-
+/* 
 #portfolio-website {
     width: 100%;
     height: 80vh;
@@ -311,7 +311,7 @@ header section details summary h2 {
 #hackathon-picture {
     width: 70%;
     height: auto;
-}
+} */
 
 .bio-classes-link-p {
     display: inline;
