@@ -72,11 +72,18 @@ a::after {
     transition: opacity 300ms, transform 300ms;
 }
 
+table {
+    --link-color: black;
+}
+
 a:hover::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
 
+table a::after {
+    background-color: var(--link-color, rgb(95, 95, 95));
+}
 hr {
     border-style: solid;
     border-color: var(--page-header, gray);
@@ -354,7 +361,6 @@ main section details {
     height: 3rem;
 }
 
-
 @media screen and (max-width: 970px) {
     h1 {
         font-size: 1.25rem;
@@ -381,32 +387,39 @@ main section details {
     }
 
     main section div#nav-holder{
-        /* position: absolute; */
         width:100vw;
         height: calc(1vh + 2vh + 2em);
+
+        .disabled {
+            & nav {
+                position:absolute;
+                z-index: 100;
+                background-color: var(--nav-background);
+                width: calc(100vw - 1rem);
+                padding-left: 1rem;
+                padding-bottom: 0.5rem;
+            }
+            & summary {
+                margin-left: 1rem;
+                &::marker {
+                    content: '\2261';
+                    font-size: 2.5rem;
+                }
+            }   
+        }
     }
 
-    main section div details nav {
-        position:absolute;
-        z-index: 100;
-        background-color: var(--nav-background);
-        width: calc(100vw - 1rem);
-        padding-left: 1rem;
-    }
-/* 
-    li::marker {
-        content: "*";
+    /* main section div details nav {
+        
     } */
-
-    main section div details summary {
+    /* main section div details summary {
         margin-left: 1rem;
-    }
 
-    main section div details summary::marker {
-        content: '\2261';
-        font-size: 2.5rem;
-    }
-
+        &::marker {
+            content: '\2261';
+            font-size: 2.5rem;
+        }
+    } */
     /* main section div details summary::marker:hover {
         box-shadow: 60px -16px teal;
     } */
