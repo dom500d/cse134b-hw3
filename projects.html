@@ -16,7 +16,9 @@
                      img-src http:; 
                      style-src 'self' 'unsafe-inline'; 
                      font-src http:;
-                     script-src 'self' 'unsafe-inline';">
+                     script-src 'self' 'unsafe-inline';
+                     connect-src 'self';
+                     media-src http:;">
 
         <!-- Facebook SEO Meta Tags Sample -->
         <meta property="og:url" content="index.html">
@@ -26,7 +28,8 @@
         
         <meta name="robots" content="noindex nofollow">
         <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
         
         <style>
             /* Testing out certain styles! */
@@ -40,12 +43,6 @@
             }
           
         </style>
-        <script>
-            // document.addEventListener("DOMContentLoaded", (event) => {
-            //     let id = document.getElementById("message-wrapper");
-            //     id.scrollTop = id.scrollHeight;
-            // });
-        </script>
     </head>
     <body>
         <div>
