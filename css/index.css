@@ -458,7 +458,7 @@ main section details {
         width: 100%;
 
         & .message:last-child {
-            margin-bottom: 10rem;
+            margin-bottom: 8rem;
         }
     }
 
