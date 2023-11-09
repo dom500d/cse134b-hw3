@@ -1,0 +1,11 @@
+body > div *:not(footer), #contact-me {
+    display: none;
+}
+
+#message-wrapper {
+    overflow-y: auto;
+}
+
+img {
+    display: none;
+}

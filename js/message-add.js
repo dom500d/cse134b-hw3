@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", (event)=>{
         let message = document.getElementById('contact-form-message').value;
         let clone = document.querySelector('template').content.cloneNode(true);
         let messages = document.getElementById('message-wrapper');
-        clone.querySelector('.message').setAttribute('data-email', email);
         let image = clone.querySelector('img');
+        clone.querySelector('.message').setAttribute('data-email', email); 
         image.setAttribute('alt', `Picture of ${name}`);
         console.log(clone);
         console.log(name);
